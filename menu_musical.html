@@ -2,32 +2,115 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>사이트이름</title>
+    <title>Moonlight</title>
+    <link rel="stylesheet" type="text/css" href="menu_musical.css">
     <style>
-      *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      ul{
-        list-style: none;
-      }
-      a{
-        text-decoration: none;
-      }
+      
     </style>
   </head>
+
+
   <body>
+  <!--매뉴-->
     <header>
       <nav>
-        <ul>
-          <li><a href="#">musical</a></li>
-          <li><a href="#">theatre</a></li>
+        <ul id="menubar">
+          <li class="menu_item"><a href="#" id="item_musical">musical</a></li>
+          <li class="menu_item">|</li>
+          <li class="menu_item"><a href="./menu_theater.html" id="item_theater">theater</a></li>
         </ul>
       </nav>
-    </header>
-    <div class="slide-photo">
 
-    </div>
+    <!--슬라이드-->
+    <ul class="slides">
+      <input type="radio" name="radio-btn" id="img-1" checked />
+      <li class="slide-container">
+      <div class="slide">
+        <img src="http://farm9.staticflickr.com/8072/8346734966_f9cd7d0941_z.jpg" />
+          </div>
+      <div class="nav">
+        <label for="img-6" class="prev">&#x2039;</label>
+        <label for="img-2" class="next">&#x203a;</label>
+      </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-2" />
+      <li class="slide-container">
+          <div class="slide">
+            <img src="http://farm9.staticflickr.com/8504/8365873811_d32571df3d_z.jpg" />
+          </div>
+      <div class="nav">
+        <label for="img-1" class="prev">&#x2039;</label>
+        <label for="img-3" class="next">&#x203a;</label>
+      </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-3" />
+      <li class="slide-container">
+          <div class="slide">
+            <img src="http://farm9.staticflickr.com/8068/8250438572_d1a5917072_z.jpg" />
+          </div>
+      <div class="nav">
+        <label for="img-2" class="prev">&#x2039;</label>
+        <label for="img-4" class="next">&#x203a;</label>
+      </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-4" />
+      <li class="slide-container">
+          <div class="slide">
+            <img src="http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg" />
+          </div>
+      <div class="nav">
+        <label for="img-3" class="prev">&#x2039;</label>
+        <label for="img-5" class="next">&#x203a;</label>
+      </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-5" />
+      <li class="slide-container">
+          <div class="slide">
+            <img src="http://farm9.staticflickr.com/8055/8098750623_66292a35c0_z.jpg" />
+          </div>
+      <div class="nav">
+        <label for="img-4" class="prev">&#x2039;</label>
+        <label for="img-6" class="next">&#x203a;</label>
+      </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-6" />
+      <li class="slide-container">
+          <div class="slide">
+            <img src="http://farm9.staticflickr.com/8195/8098750703_797e102da2_z.jpg" />
+          </div>
+      <div class="nav">
+        <label for="img-5" class="prev">&#x2039;</label>
+        <label for="img-1" class="next">&#x203a;</label>
+      </div>
+      </li>
+
+      <li class="nav-dots">
+        <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+        <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+        <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+        <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+        <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+        <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+      </li>
+      </ul>
+    </header>
+
+    <!--밑매뉴-->
+    <section>
+      <h1>What's Hot</h1>
+      <div class="menu_photo">
+        <img src="./phantom_of_opera.jpg">
+        <a href="./musical_1.html">오페라의 유령</a>
+        <img src="./cats.jpg">
+        <a href="./musical_1.html">캣츠</a>
+        <img src="./romeo_rul.jpg">
+        <a href="./musical_1.html">로미오와 줄리엣</a>
+      </div>
+    </section>
   </body>
 </html>
