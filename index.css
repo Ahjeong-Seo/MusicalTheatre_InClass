@@ -35,7 +35,7 @@ a:hover{
   position: fixed;
 }
 .curtain:hover{
-  visibility: hidden;
+  z-index: -1;
 }
 section{
   width: 100%;
