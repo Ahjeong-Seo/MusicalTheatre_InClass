@@ -3,63 +3,139 @@
   <head>
     <meta charset="utf-8">
     <title>Moonlight</title>
-    <style>
-      *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      html {
-        border-top: 5px solid #fff;
-        background: #2E2E2E;
-        color: #2a2a2a;
-      }
-      a,li{
-        color:  #FF6D70;
-        text-decoration: none;
-      }
-      #item_musical{
-        color: #8DE2AC;
-      }
-      a:hover{
-        color: #8DE2AC;
-      }
-      #menubar{
-        list-style: none;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-      .menu_item{
-        padding:2% 10%;
-      }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="menu_theater.css">
   </head>
+
   <body>
+  <!--매뉴-->
     <header>
       <nav>
-        <ul id="menubar">
-          <li class="menu_item"><a href="./menu_musical.html" id="item_musical">musical</a></li>
-          <li class="menu_item">|</li>
-          <li class="menu_item"><a href="#" id="item_theater">theater</a></li>
-        </ul>
+        <a href="./index.html" id="logo"><img src="./logo_row.png" alt=""></a>
+        <div id="menubar">
+          <div class="menu_item"><a href="./menu_musical.html" id="item_musical">Musical</a></div>
+          <div class="menu_item"><a href="#" id="item_theater">Theater</a></div>
+        </div>
       </nav>
+
+    <!--슬라이드-->
+    <ul class="slides">
+      <input type="radio" name="radio-btn" id="img-1" checked />
+      <li class="slide-container">
+      <div class="slide">
+        <img src="./bannert1.jpg" />
+          </div>
+      <div class="nav">
+        <label for="img-6" class="prev">&#x2039;</label>
+        <label for="img-2" class="next">&#x203a;</label>
+      </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-2" />
+      <li class="slide-container">
+          <div class="slide">
+            <img src="./bannert2.jpg" />
+          </div>
+      <div class="nav">
+        <label for="img-1" class="prev">&#x2039;</label>
+        <label for="img-3" class="next">&#x203a;</label>
+      </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-3" />
+      <li class="slide-container">
+          <div class="slide">
+            <img src="./bannert3.jpg" />
+          </div>
+      <div class="nav">
+        <label for="img-2" class="prev">&#x2039;</label>
+        <label for="img-4" class="next">&#x203a;</label>
+      </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-4" />
+      <li class="slide-container">
+          <div class="slide">
+            <img src="./bannert4.jpg" />
+          </div>
+      <div class="nav">
+        <label for="img-3" class="prev">&#x2039;</label>
+        <label for="img-5" class="next">&#x203a;</label>
+      </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-5" />
+      <li class="slide-container">
+          <div class="slide">
+            <img src="./bannert5.jpg" />
+          </div>
+      <div class="nav">
+        <label for="img-4" class="prev">&#x2039;</label>
+        <label for="img-6" class="next">&#x203a;</label>
+      </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-6" />
+      <li class="slide-container">
+          <div class="slide">
+            <img src="./bannert6.jpg" />
+          </div>
+      <div class="nav">
+        <label for="img-5" class="prev">&#x2039;</label>
+        <label for="img-1" class="next">&#x203a;</label>
+      </div>
+      </li>
+
+      <li class="nav-dots">
+        <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+        <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+        <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+        <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+        <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+        <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+      </li>
+      </ul>
     </header>
-    <div class="selector">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <ul class="selector_little">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
+
+    <!--밑매뉴-->
+    <section>
+      <h1>What's Hot</h1>
+      <div class="menu_photo">
+        <div class="menu_items" id="items-1">
+          <a href="./dead.html">
+            <img src="./theater_catoftop.jpg" id="items_1">
+            <p>옥탑방 고양이</p>
+        </a>
+        </div>
+        <div class="menu_items" id="items-2">
+          <a href="./dead.html">
+            <img src="./theater_diestory.jpg" id="items_2">
+            <p>죽여주는 이야기</p>
+          </a>
+        </div>
+        <div class="menu_items" id="items-3">
+          <a href="./dead.html">
+            <img src="./theater_elipant.jpg" id="items_3">
+            <p>엘리펀트 송</p>
+          </a>
+        </div>
+        <div class="menu_items" id="items-4">
+          <a href="./dead.html">
+            <img src="./theater_fairtail.jpg" id="items_4">
+            <p>환상동화</p>
+          </a>
+        </div>
+        <div class="menu_items" id="items-5">
+          <a href="./dead.html">
+            <img src="./theater_romanceB.jpg" id="items_5">
+            <p>발칙한 로맨스</p>
+          </a>
+        </div>
+        <div class="menu_items" id="items-6">
+          <a href="./dead.html">
+            <img src="./theater_secretflower.jpg" id="items_6">
+            <p>꽃의 비밀</p>
+          </a>
+        </div>
+    </section>
   </body>
 </html>
